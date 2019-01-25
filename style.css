@@ -1,0 +1,284 @@
+body {
+
+    background: #edf0f1;
+    
+}
+
+body, input, button {
+    font-family: 'Roboto', sans-serif;
+  }
+
+header {
+    width: 100%;
+    height: 70px;
+    padding: 15px;
+    
+    left: 0;
+    top: 0;
+
+    z-index: 5;
+
+    background: #25b99a;
+    box-shadow: 0px 2px 4px rgba(44, 62, 80, 0.15);
+
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+header input {
+    width: 100%;
+    height: 40px;
+    padding: 0 60px 0 0;
+    float: left;
+    
+    color: #fff;
+    font-size: 15px;
+    font-weight: 400;
+    text-indent: 18px;
+
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px 25px 25px 5px;
+    border: 0px;
+    box-shadow: none;
+    outline: none;
+}
+
+header input::placeholder {
+    color: rgba(255, 255, 255, 1);
+  }
+
+header button {
+
+    position: absolute;
+    background-color: #fff;
+
+    right: 15px;
+
+
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+header button svg {
+
+    width: 50%;
+    height: 50%;
+
+    position: relative;
+}
+
+div {
+    padding: 0 0 0 0;
+}
+
+li {
+    width: 100%;
+    min-height: 40px;
+    background: grey;
+
+    padding: 9px 50px 14px 14px;
+    margin: 0 0 10px 0;
+    border-radius: 5px;
+
+    font-size: 14px;
+    font-weight: 500;
+    color: #444;
+    line-height: 22px;
+
+    background: #fff;
+    box-shadow: 0px 1px 2px rgba(44, 62, 80, 0.10);
+    word-break: break-word;
+    position: relative;   
+}
+
+div ul {
+
+    padding:  15px 15px 15px 15px;
+    position: relative;
+
+  
+
+}
+
+
+
+ul:first-of-type::before {
+
+    content: none;
+
+
+}
+
+ul::before {
+    
+    content: '';
+    width: 150px;
+    height: 2px;
+    background: #d8e5e0;
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    margin: 0 0 0 -75px;
+}
+
+ul strong {
+
+    width: 100%;
+    display: block;
+    text-align: center;
+
+    font-size: 200%;
+}
+
+
+
+
+#contain:empty::after {
+    color: #000000;
+    position: absolute;
+    content: "You have entered nothing yet!!";
+    padding: 13px;
+
+    width: 100%;
+    display: block;
+    text-align: center;
+    font-size: 17px;
+    color: #aaa;
+}
+
+
+
+
+
+
+
+/*kjlsajdaklsjasdkljadslkjadslkadsjlkasdjlksajklsdajsdklds8?*/
+#contain li .buttons {
+    width: 100px;
+    height: 100%;
+  
+    position: absolute;
+    /*padding: 50px 0 0 0;*/
+
+    top: 0;
+    right: 0;
+  }
+  
+#contain li .buttons button {
+    width: 25px;
+    height: 25px;
+    float: left;
+    background: none;
+    /*position: relative;*/
+    right: 10px;
+    border: 0px;
+    box-shadow: none;
+    outline: none;
+    cursor: pointer;
+
+    position: absolute;               /* 2 */
+    top: 50%;                         /* 3 */
+    transform: translate(0, -50%);
+
+    z-index: 8;
+  }
+
+  /*#contain li .buttons button.remove::after {
+    content: '';
+  width: 1px;
+  height: 30px;
+  background: #edf0f1;
+
+  position: absolute;
+  top: 10px;
+  left: 0;
+  }*/
+  
+  /*li .buttons button:last-of-type:before {
+    content: '';
+    width: 1px;
+    height: 30px;
+    background: #edf0f1;
+  
+    position: absolute;
+    top: 10px;
+    left: 0;
+  }*/
+
+#contain li .buttons button svg {
+    width: 22px;
+    height: 22px;
+  
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 9;
+    
+    margin: -11px 0 0 -11px;
+    background-color: white;
+  }
+
+  ul li .buttons button.remove svg .fill {
+    transition: fill 0.2s ease;
+  }
+
+  ul li .buttons button.remove svg .nofill {
+    fill: white;
+  }
+  
+  ul li .buttons button.remove svg .fill {
+    fill: #c0cecb;
+  }
+  
+  ul li .buttons button.remove:hover svg .fill {
+    fill: #e85656;
+  }
+  
+  ul li .buttons button.edit svg {
+    
+    border-radius: 11px;
+    background: #25b99a;
+    border: 0px;
+    border: 1.5px solid #25b99a;
+  }
+
+  ul li .buttons button.edit svg .nofill {
+    fill: white;
+  }
+
+  ul li .buttons button.edit svg .fill {
+    fill: #25b99a;
+  }
+
+  ul li .buttons button.edit svg:hover .nofill {
+    fill: rgba(37, 185, 154, 0.75);
+  }
+
+
+  ul li .buttons button.edit svg:hover .fill {
+    fill: #fff;
+  }
+
+
+  ul li .buttons button.edit::after {
+    content: '';
+    width: 1px;
+    height: 30px;
+    background: #edf0f1;
+
+    position: absolute;
+    top: 10px;
+    left: 0;
+
+  }
+  
+  header button:hover {
+    background-color: black;
+  }
+  
+  header button:hover svg .fill {
+    fill: white;
+  }
